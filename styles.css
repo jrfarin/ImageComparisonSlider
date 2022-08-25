@@ -1,0 +1,23 @@
+
+/* IT should be the same width & height as the image for center positions */
+.img-slider-container {
+    position: relative;
+    /* width: 600px; */
+    height: 800px; 
+}      
+.img-slider-img {
+    position: absolute;
+    width: auto;
+    height: auto;
+    overflow:hidden;
+}       
+.img-compare-slider {
+    position: absolute;
+    z-index:9;
+    cursor: ew-resize;
+    width: 40px;
+    height: 40px;
+    background-color: #0dcaf0;
+    opacity: 0.7;
+    border-radius: 50%;
+}
