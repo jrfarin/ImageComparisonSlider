@@ -1,9 +1,8 @@
 
-/* IT should be the same width & height as the image for center positions */
 .img-slider-container {
     position: relative;
     /* width: 600px; */
-    height: 800px; 
+    /* height: 800px;  */
 }      
 .img-slider-img {
     position: absolute;

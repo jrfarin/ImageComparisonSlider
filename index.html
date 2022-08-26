@@ -16,14 +16,26 @@
                 </header>
             </div>
         </div>
-        <div class="row mt-5">
+        <div class="row mt-4">
             <div class="col-12">              
-                <div class="img-slider-container">
+                <div class="img-slider-container mx-auto">
                     <div class="img-slider-img">
-                        <img src="./img/model-pink.jpg" width="1205" height="800" class="d-block">
+                        <picture>
+                            <source media="(min-width: 1400px)" srcset="./img/model-pink.jpg" width="1205" height="800" class="d-block" loading="lazy">                          
+                            <source media="(min-width: 1200px)" srcset="./img/model-pink.jpg" width="1032" height="685" class="d-block" loading="lazy">                          
+                            <source media="(min-width: 1024px)" srcset="./img/model-pink.jpg" width="880" height="585" class="d-block" loading="lazy">                          
+                            <source media="(min-width: 768px)" srcset="./img/model-pink.jpg" width="661" height="440" class="d-block" loading="lazy">
+                            <img src="./img/model-pink.jpg" width="340" height="225"  class="d-block" loading="lazy">
+                        </picture> 
                     </div>
                     <div class="img-slider-img img-slider-overlay">
-                        <img src="./img/model-blonde.jpg" width="1205" height="800" class="d-block">
+                        <picture>
+                            <source media="(min-width: 1400px)" srcset="./img/model-blonde.jpg" width="1205" height="800" class="d-block" loading="lazy">                          
+                            <source media="(min-width: 1200px)" srcset="./img/model-blonde.jpg" width="1032" height="685" class="d-block" loading="lazy">                          
+                            <source media="(min-width: 1024px)" srcset="./img/model-blonde.jpg" width="880" height="585" class="d-block" loading="lazy">                          
+                            <source media="(min-width: 768px)" srcset="./img/model-blonde.jpg" width="661" height="440" class="d-block" loading="lazy">
+                            <img src="./img/model-blonde.jpg" width="340" height="225"  class="d-block" loading="lazy">
+                        </picture>
                     </div>
                 </div>
             </div>
@@ -31,4 +43,5 @@
     </div>
 
     <script src="./app.js"></script>
+
 </html>

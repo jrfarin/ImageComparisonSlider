@@ -15,10 +15,18 @@ const initComparisons = () => {
 function compareImages(img) {
     let slider;
     let clicked = 0;
+    const imgContainer = document.querySelector('.img-slider-container')
 
     // Get the width & height of the img element
     const widthImg = img.offsetWidth;
     const heightImg = img.offsetHeight;
+    
+    // Set width & height in slider container.  it should be the same width & height as the image for center positions 
+    imgContainer.style.width = `${widthImg}px`;
+    imgContainer.style.height = `${heightImg}px`;
+
+    // Reload when window resize. Reposition container & slider 
+    window.onresize = () => location.reload();
 
     // Set the width of the img element to 50%
     img.style.width = (widthImg / 2) + 'px';
